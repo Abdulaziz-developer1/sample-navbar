@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+body {
+  background-color: #0e0c15;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  border-bottom: 0.5px solid #6e657280;
+  z-index: 999;
+}
+
+.head-left {
+  display: flex;
+  align-items: center;
+  color: lightgray;
+}
+
+.head-left img {
+  height: 45px;
+  margin-right: 15px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+header a {
+  color: gray;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+header a:hover {
+  color: lightgray;
+  text-shadow: 0 0 15px #ffffff5a;
+}
+
+.head-right {
+  display: flex;
+  align-items: center;
+}
+
+.button-box {
+  position: relative;
+  width: 90px;
+  height: 45px;
+  margin-left: 25px;
+  background: linear-gradient(
+    to right,
+    #00aaa7,
+    #7f42a7,
+    #6600c5,
+    #1f2b9c,
+    #2a46ff,
+    #0099ff,
+    #00aaa7
+  );
+  border-radius: 10px;
+  background-size: 200%;
+  animation: animation 2.5s linear infinite;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 44%, 100% 70%, 100% 100%, 30% 100%, 0 100%, 0 0);
+}
+
+@keyframes animation {
+    to{
+        background-position: 200%;
+    }
+}
+
+.head-right button{
+    position: absolute;
+    inset: 3px 3px 3px 3px;
+    border: none;
+    background: #0e0c15;
+    color: lightgray;
+    border-radius: 10px;
+    clip-path: polygon();
+    clip-path: polygon(30% 0%, 70% 0%, 100% 44%, 100% 70%, 100% 100%, 30% 100%, 0 100%, 0 0);
+    cursor: pointer;
+}
+
+.head-right button:hover{
+    color: #7e00d2;
+}
